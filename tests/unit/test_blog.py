@@ -4,7 +4,7 @@ from source.blog import Blog
 class BlogTest(TestCase):
 
     def test_create_blog(self):
-        b = Blog('Test','Test author',4)
+        b = Blog('Tes','Test author',4)
 
         self.assertEqual('Test', b.title)
         self.assertEqual('Test author', b.author)
