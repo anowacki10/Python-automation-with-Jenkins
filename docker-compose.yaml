@@ -1,0 +1,12 @@
+version: '3'
+services:
+  testApp:
+    image: python:3.10-slim
+    container_name: pythonContainer
+    volumes:
+      - ../Python-automation-with-Jenkins:/app
+    working_dir: /app
+    ports:
+      - "5000:5000"
+    restart: always
+    tty: true
